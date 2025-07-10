@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./icons/css/all.min.css" />
+    <title>Jadoo - Travel Website</title>
+  </head>
+  <body>
+    <!-- Navbar section -->
+    <nav id="navbar">
+      <div class="logo">
+        <img src="./assets/images/Logo.png" alt="" />
+      </div>
+      <ul>
+        <li>
+          <a href="#">Destinations</a>
+        </li>
+        <li>
+          <a href="#">Hotels</a>
+        </li>
+        <li>
+          <a href="#">Flights</a>
+        </li>
+        <li>
+          <a href="#">Bookings</a>
+        </li>
+        <li>
+          <a href="#">Login</a>
+        </li>
+        <li>
+          <a href="#" class="sign-up">Sign up</a>
+        </li>
+        <li
+          style="display: flex; align-items: center"
+          onclick="toggleDropdown()"
+        >
+          <span id="lang">EN</span>
+          <i
+            class="fa fa-chevron-up"
+            style="margin-left: 3px"
+            id="chevron-up"
+          ></i>
+          <i
+            class="fa fa-chevron-down"
+            style="margin-left: 3px; display: none"
+            id="chevron-down"
+          ></i>
+          <!-- Language Selection Dropdown @s -->
+          <div class="dropdown" id="dropdown">
+            <ul>
+              <li onclick="switchLang('EN')">
+                <img src="./assets/images/flags/uk-sq.png" alt="" />
+                <span>English</span>
+              </li>
+              <li onclick="switchLang('ES')">
+                <img src="./assets/images/flags/spanish-sq.png" alt="" />
+                <span>Spanish</span>
+              </li>
+              <li onclick="switchLang('FR')">
+                <img src="./assets/images/flags/french-sq.png" alt="" />
+                <span>French</span>
+              </li>
+              <li onclick="switchLang('PT')">
+                <img src="./assets/images/flags/portugal.png" alt="" />
+                <span>Portugese</span>
+              </li>
+              <li onclick="switchLang('IT')">
+                <img src="./assets/images/flags/italy-sq.png" alt="" />
+                <span>Italian</span>
+              </li>
+            </ul>
+          </div>
+          <!-- Language Selection Dropdown @e -->
+        </li>
+      </ul>
+      <div class="menu">
+        <i class="fas fa-bars" style="font-size: 20px; color: #181e4b"></i>
+      </div>
+    </nav>
+    <!-- End of Navbar -->
+
+    <!-- Heading Section -->
+    <section class="intro-section">
+      <div class="intro-container">
+        <div class="intro-heading">
+          <h4>best destinations around the world</h4>
+          <h1>Travel, enjoy and live a new and full life</h1>
+          <p>
+            Built Wicket longer admire do barton vanity itself do in it.
+            Preferred to sportsmen it engrossed listening. Park gate sell they
+            west hard for the.
+          </p>
+          <div class="intro-button-container">
+            <button>Find out more</button>
+            <button>
+              <i class="fa fa-play"></i>
+              Play Demo
+            </button>
+          </div>
+        </div>
+        <div>
+          <img
+            src="./assets/images/Traveler.png"
+            alt="traveler"
+            class="intro-image"
+          />
+        </div>
+      </div>
+
+      <!-- Background embeddings: Plane & Line -->
+      <div class="image-embed">
+        <img src="./assets/images/line.png" alt="line" />
+        <img src="./assets/images/plane.png" alt="plane" />
+        <img src="./assets/images/plane.png" alt="plane" />
+      </div>
+    </section>
+    <!-- End of Intro Section -->
+
+    <!-- Category Section -->
+    <section class="category-section">
+      <div class="category-heading">
+        <p>Category</p>
+        <h1>We Offer Best Services</h1>
+      </div>
+      <div class="category-items-container">
+        <div class="category-item">
+          <img src="./assets/images/satellite-dish.png" alt="" />
+        </div>
+        <div class="category-item">
+          <img src="./assets/images/plane.png" alt="" />
+        </div>
+        <div class="category-item">
+          <img src="./assets/images/mic.png" alt="" />
+        </div>
+        <div class="category-item">
+          <img src="./assets/images/settings.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <script src="./scripts/dropdown-script.js"></script>
+    <script src="./scripts/navbar-scroll.js"></script>
+  </body>
+</html>
