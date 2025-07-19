@@ -155,53 +155,57 @@ nav .sign-up:hover {
   cursor: pointer;
 }
 
-.intro-section {
-  padding: 160px 180px;
+.site-container {
   background-image: url(../assets/images/Decore.png);
   background-repeat: no-repeat;
   background-size: 100% 80vh;
-  z-index: 1;
+  padding: 150px 300px 10px 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
 }
 
 .intro-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-shrink: 0;
   flex-wrap: wrap;
+  gap: 100px;
   width: 100%;
+  position: relative;
 }
 
 .intro-heading {
-  margin: 40px 150px;
+  width: 40%;
+  margin-top: 60px;
 }
 
 .intro-heading h4 {
   text-transform: uppercase;
   font-family: "Volkhov", sans-serif;
   color: #df6951;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .intro-heading h1 {
   font-family: "Volkhov", sans-serif;
-  font-size: 100px;
+  font-size: 80px;
   margin-top: -10px;
   color: #181e4b;
-  width: 60%;
-  line-height: 100px;
+  line-height: 80px;
 }
 
 .intro-heading p {
   font-family: "Poppins", sans-serif;
   margin-top: -60px;
   color: #5e6282;
-  width: 46%;
   font-size: 20px;
 }
 
 .intro-button-container {
   margin-top: 26px;
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -241,38 +245,30 @@ nav .sign-up:hover {
   margin-right: 5px;
 }
 
+.intro-image-container {
+  width: 44%;
+  z-index: 900;
+}
+
 .intro-image {
-  width: 700px;
-  height: 680px;
-  position: absolute;
-  top: 190px;
-  right: 260px;
-  z-index: 1;
+  width: 100%;
+  height: 660px;
 }
 
 .image-embed img:nth-child(1) {
-  position: absolute;
-  top: 340px;
-  left: 660px;
-  z-index: -1;
-  width: 18%;
-  transform: rotate(180deg);
+  display: none;
 }
 
 .image-embed img:nth-child(2) {
   position: absolute;
   top: 270px;
-  right: 230px;
+  right: 300px;
 }
 
 .image-embed img:nth-child(3) {
   position: absolute;
   top: 200px;
-  right: 700px;
-}
-
-.category-section {
-  padding: 0px;
+  right: 750px;
 }
 
 .category-heading {
@@ -295,9 +291,9 @@ nav .sign-up:hover {
 
 .category-items-container {
   display: flex;
-  margin: 100px 150px;
   justify-content: center;
   column-gap: 60px;
+  row-gap: 20px;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -406,10 +402,6 @@ nav .sign-up:hover {
   border-bottom-right-radius: 10px;
 }
 
-.destinations-section {
-  padding-top: 80px;
-}
-
 .destinations-heading {
   text-align: center;
 }
@@ -431,7 +423,6 @@ nav .sign-up:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 60px 150px;
   gap: 60px;
   flex-wrap: wrap;
 }
@@ -481,10 +472,6 @@ nav .sign-up:hover {
   color: #5e6282;
 }
 
-.booking-section {
-  padding-top: 150px;
-}
-
 .booking-container {
   display: flex;
   justify-content: center;
@@ -495,7 +482,7 @@ nav .sign-up:hover {
 }
 
 .booking-main-content {
-  width: 30%;
+  width: 45%;
 }
 
 .booking-heading p {
@@ -557,7 +544,7 @@ nav .sign-up:hover {
 }
 
 .booking-image-content {
-  width: fit-content;
+  width: 40%;
 }
 
 .card {
@@ -703,10 +690,6 @@ nav .sign-up:hover {
   border-radius: 20px;
 }
 
-.testimonial-section {
-  padding: 150px 340px;
-}
-
 .testimonial-container {
   display: flex;
   justify-content: center;
@@ -740,7 +723,7 @@ nav .sign-up:hover {
   margin-top: 100px;
 }
 
-.testimonial-dots span {
+.testimonial-dots .dot {
   width: 14px;
   height: 14px;
   border-radius: 50%;
@@ -749,7 +732,7 @@ nav .sign-up:hover {
   transition: background-color 0.3s ease;
 }
 
-.testimonial-dots .active {
+.testimonial-dots .dot.active {
   background-color: #555; /* Darker dot for active state */
 }
 
@@ -841,6 +824,238 @@ nav .sign-up:hover {
   color: #555;
 }
 
+.brand-section {
+  padding: 150px 300px;
+}
+
+.brand-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.brand-container .image-container {
+  width: 220px;
+  height: 100px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  transition: transform 0.1s ease;
+}
+
+.brand-container .image-container:hover {
+  box-shadow: 0px 8px 0px 0px rgba(98, 70, 229, 0.1);
+  transform: scale(1.2);
+}
+
+.brand-container img {
+  width: 120px;
+  object-fit: contain;
+  margin: auto;
+}
+
+.newsletter-section {
+  padding: 30px 400px;
+}
+
+.newsletter-container {
+  background-image: linear-gradient(to left bottom, #e8f5ff, #f4f4ff);
+  padding: 80px;
+  border-radius: 100px 10px 10px 10px;
+  position: relative;
+}
+
+.newsletter-heading {
+  text-align: center;
+}
+
+.newsletter-heading p {
+  font-family: "Poppins", sans-serif;
+  font-size: 26px;
+  width: 64%;
+  margin: auto;
+  color: #5e6282;
+}
+
+.newsletter-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 60%;
+  margin: auto;
+  padding-top: 80px;
+}
+
+.input-container {
+  background-color: #ffffff;
+  width: 65%;
+  padding: 20px 36px;
+  border-radius: 10px;
+  position: relative;
+  margin: 0;
+}
+
+.input-container input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  padding: 0px 20px;
+  color: #5e6282;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.input-container input::placeholder {
+  color: #555;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.input-container input:focus {
+  outline: none;
+}
+
+.input-container i {
+  position: absolute;
+  left: 22px;
+  top: 30px;
+  font-size: 20px;
+  color: #555;
+}
+
+.newsletter-form-container button {
+  background-image: linear-gradient(to left top, #ff7d68, #f1a5016d);
+  border: none;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  padding: 24px 60px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.newsletter-overlay-image {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 110px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.footer-main .brand-container {
+  width: 260px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-main .brand-container h1 {
+  margin: 0;
+  font-size: 74px;
+  font-family: "Poppins", sans-serif;
+  color: #181e4b;
+}
+
+.footer-main .brand-container p {
+  margin-top: -28px;
+  font-family: "Poppins", sans-serif;
+  color: #5e6282;
+}
+
+.footer-main ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 100px;
+}
+
+.footer-main ul .list-header {
+  font-size: 26px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.footer-main ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  color: #5e6282;
+}
+
+.footer-main ul li a:hover {
+  color: #f1a501;
+}
+
+.footer-main .more-items-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.footer-main .more-items-container .social-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-main .more-items-container .social-container i {
+  background-color: #ffffff;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #000000;
+}
+
+.footer-main .more-items-container .social-container i:nth-child(2) {
+  background-image: linear-gradient(#6246e5, #df6951, #f1a501);
+  color: #ffffff;
+}
+
+.footer-main .download-store-container p {
+  margin: 0;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: #5e6282;
+}
+
+.footer-main .download-store-container .download-store-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+footer .copyright {
+  margin-top: 100px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #5e6282;
+}
+
 @media screen and (max-width: 1650px) {
   nav {
     padding: 50px;
@@ -853,43 +1068,70 @@ nav .sign-up:hover {
     display: block;
   }
 
-  .intro-heading {
-    margin: 0px;
-  }
-
   .intro-heading h1 {
     line-height: 70px;
     margin-bottom: 70px;
   }
 
-  .image-embed img:nth-child(1) {
-    display: none;
+  .booking-image-content {
+    width: 40%;
   }
 
-  .booking-image-content {
-    width: 30%;
+  .testimonial-header {
+    width: 1000px;
+  }
+
+  .testimonial-section {
+    padding: 150px 190px;
+  }
+
+  .testimonial-container {
+    gap: 60px !important;
+  }
+
+  .testimonial-header {
+    width: 40% !important;
+  }
+
+  .testimonial-main-content {
+    width: 60%;
+  }
+
+  .newsletter-form-container {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .input-container {
+    width: 100%;
+  }
+
+  .newsletter-form-container button {
+    width: 100%;
+  }
+
+  .newsletter-section {
+    padding: 30px 200px;
+  }
+
+  .footer-main .brand-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-main .brand-container p {
+    text-align: center;
   }
 }
 
 @media screen and (max-width: 1600px) and (min-width: 1220px) {
-  .intro-image {
-    width: 600px;
-    height: 500px;
-    top: 240px;
+  .site-container {
+    padding: 150px 100px;
   }
-
-  .intro-heading h4 {
-    font-size: 14px !important;
-  }
-
-  .intro-heading h1 {
-    font-size: 52px !important;
-    line-height: 60px;
-    width: 50%;
-  }
-
-  .intro-heading p {
-    font-size: 14px;
+  .booking-image-content {
+    width: 46%;
   }
 }
 
@@ -910,11 +1152,43 @@ nav .sign-up:hover {
   .booking-image-content {
     width: fit-content;
   }
+
+  .testimonial-section {
+    padding: 150px 0px;
+  }
+
+  .testimonial-header {
+    width: 100% !important;
+    text-align: center;
+  }
+
+  .testimonial-dots {
+    justify-content: center;
+  }
+
+  .testimonial-main-content {
+    width: 100%;
+  }
+
+  .testimonial-card {
+    width: 100%;
+  }
+
+  .testimonial-card-switch {
+    right: -120px !important;
+  }
 }
 
 @media screen and (max-width: 1220px) {
+  .site-container {
+    padding: 100px 80px;
+  }
   .intro-image {
     display: none;
+  }
+
+  .intro-heading {
+    width: 100%;
   }
 
   .intro-container h4 {
@@ -922,18 +1196,12 @@ nav .sign-up:hover {
   }
 
   .intro-heading h1 {
-    width: 100% !important;
     text-align: center;
   }
 
   .intro-heading p {
-    width: 100%;
     text-align: center;
     line-height: 40px;
-  }
-
-  .intro-section {
-    padding: 150px 140px !important;
   }
 
   .intro-button-container {
@@ -950,10 +1218,6 @@ nav .sign-up:hover {
     left: 200px;
   }
 
-  .category-heading h1 {
-    padding: 0px 50px;
-  }
-
   .booking-main-content {
     width: 100% !important;
   }
@@ -961,45 +1225,48 @@ nav .sign-up:hover {
   .card-overlay {
     display: none;
   }
+
+  .newsletter-section {
+    padding: 30px 100px;
+  }
+
+  .footer-main {
+    gap: 20px;
+  }
 }
 
 @media screen and (max-width: 1850px) {
-  .intro-heading {
-    margin: 80px 0px;
+  .intro-heading h1 {
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 60px;
   }
 
   .intro-image {
-    right: 150px !important;
+    height: 540px;
   }
 
-  .image-embed img:nth-child(1) {
-    top: 340px;
-    left: 400px;
+  .testimonial-container {
+    gap: 52px;
   }
 
-  .image-embed img:nth-child(2) {
-    top: 270px;
-    right: 120px;
+  .testimonial-header {
+    width: 39%;
   }
 
-  .image-embed img:nth-child(3) {
-    top: 200px;
-    right: 580px;
+  .testimonial-main-content {
+    width: 50%;
   }
 
-  .intro-heading h4 {
-    font-size: 16px;
-  }
-
-  .intro-heading h1 {
-    font-size: 70px;
-    width: 40%;
-    line-height: 70px;
-    margin-bottom: 68px;
+  .newsletter-form-container {
+    width: 80%;
   }
 }
 
 @media screen and (max-width: 800px) {
+  .testimonial-main-content {
+    width: 70%;
+  }
   .intro-section {
     padding: 100px 50px !important;
   }
@@ -1007,5 +1274,32 @@ nav .sign-up:hover {
   .intro-heading p {
     width: 100%;
     text-align: center;
+  }
+  .newsletter-container {
+    padding: 50px 10px;
+  }
+
+  .footer-main {
+    gap: 0px;
+  }
+
+  .site-container {
+    padding: 60px 10px 10px 10px;
+  }
+
+  .destinations-heading h1 {
+    font-size: 50px;
+  }
+
+  .category-heading h1 {
+    font-size: 50px;
+  }
+
+  .booking-heading h1 {
+    font-size: 50px;
+  }
+
+  .testimonial-heading h1 {
+    font-size: 50px;
   }
 }
