@@ -1056,6 +1056,67 @@ footer .copyright {
   color: #5e6282;
 }
 
+.offcanvas {
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 2000;
+  right: 0;
+  width: 50%;
+  padding: 30px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  display: none;
+  box-shadow: 0px 4px 20px 0px rgba(98, 70, 229, 0.1);
+}
+
+.offcanvas-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.offcanvas-header .cancel {
+  border: 1px solid #181e4b;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.offcanvas ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  padding: 0;
+  margin-top: 70px;
+}
+
+.offcanvas ul li {
+  width: 100%;
+  height: 90px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+  border: 1px solid #5e62821e;
+  cursor: pointer;
+}
+
+.offcanvas ul li:hover {
+  background-color: #f1a50188;
+}
+
+.offcanvas ul li a {
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  color: #5e6282;
+}
+
 @media screen and (max-width: 1650px) {
   nav {
     padding: 50px;
@@ -1301,5 +1362,41 @@ footer .copyright {
 
   .testimonial-heading h1 {
     font-size: 50px;
+  }
+
+  nav {
+    padding: 40px 10px;
+  }
+
+  .booking-item-text {
+    width: 70% !important;
+    text-align: center;
+  }
+
+  .testimonial-card-switch {
+    display: none;
+  }
+
+  .testimonial-card {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .testimonial-card img {
+    display: none;
+  }
+  .testimonial-main-content {
+    width: 100%;
+  }
+  .testimonial-card.inactive {
+    left: 0px !important;
+  }
+
+  .newsletter-overlay-image {
+    display: none;
+  }
+
+  .offcanvas {
+    width: 80%;
   }
 }
