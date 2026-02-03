@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="./icons/css/all.min.css" />
+  </head>
+
+  <body>
+    <!-- Navbar section -->
+    <nav id="navbar">
+      <div class="logo">
+        <img src="./assets/images/Logo.png" alt="" />
+      </div>
+      <ul>
+        <li><a href="#">Destinations</a></li>
+        <li><a href="#">Hotels</a></li>
+        <li><a href="#">Flights</a></li>
+        <li><a href="#">Bookings</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#" class="sign-up">Sign up</a></li>
+        <li style="display: flex; align-items: center" onclick="toggleDropdown()">
+          <span id="lang">EN</span>
+          <i class="fa fa-chevron-up" id="chevron-up"></i>
+          <i class="fa fa-chevron-down" id="chevron-down" style="display: none"></i>
+
+          <div class="dropdown" id="dropdown">
+            <ul>
+              <li onclick="switchLang('EN')"><span>English</span></li>
+              <li onclick="switchLang('ES')"><span>Spanish</span></li>
+              <li onclick="switchLang('FR')"><span>French</span></li>
+              <li onclick="switchLang('PT')"><span>Portuguese</span></li>
+              <li onclick="switchLang('IT')"><span>Italian</span></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+
+      <div class="menu" id="menu">
+        <i class="fas fa-bars" style="font-size: 20px; color: #181e4b"></i>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Bookings Section -->
+    <section class="destinations-section">
+      <div class="destinations-heading">
+        <p>Your Trips</p>
+        <h1>My Bookings</h1>
+      </div>
+
+      <div class="destinations-grid">
+        <!-- Booking 1 -->
+        <div class="destination-card">
+          <img
+            src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=80"
+            alt="Paris Trip"
+          />
+          <div class="destination-card-body">
+            <div class="destination-main">
+              <h3>Paris Getaway</h3>
+              <span class="price">Confirmed</span>
+            </div>
+            <div class="destination-meta">
+              <span>
+                <i class="fa fa-plane"></i>
+                Flight · Economy
+              </span>
+              <span class="rating">
+                <i class="fa fa-calendar"></i> Mar 12 – Mar 18
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Booking 2 -->
+        <div class="destination-card">
+          <img
+            src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=80"
+            alt="Rome Hotel"
+          />
+          <div class="destination-card-body">
+            <div class="destination-main">
+              <h3>Grand Roma Hotel</h3>
+              <span class="price">Pending</span>
+            </div>
+            <div class="destination-meta">
+              <span>
+                <i class="fa fa-bed"></i>
+                Hotel · 4 Nights
+              </span>
+              <span class="rating">
+                <i class="fa fa-calendar"></i> Apr 02 – Apr 06
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Booking 3 -->
+        <div class="destination-card">
+          <img
+            src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=80"
+            alt="Dubai Trip"
+          />
+          <div class="destination-card-body">
+            <div class="destination-main">
+              <h3>Dubai Holiday</h3>
+              <span class="price">Completed</span>
+            </div>
+            <div class="destination-meta">
+              <span>
+                <i class="fa fa-suitcase"></i>
+                Package · 7 Days
+              </span>
+              <span class="rating">
+                <i class="fa fa-calendar"></i> Jan 10 – Jan 17
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Booking 4 -->
+        <div class="destination-card">
+          <img
+            src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=80"
+            alt="London Flight"
+          />
+          <div class="destination-card-body">
+            <div class="destination-main">
+              <h3>London Business Trip</h3>
+              <span class="price">Cancelled</span>
+            </div>
+            <div class="destination-meta">
+              <span>
+                <i class="fa fa-plane"></i>
+                Flight · Business
+              </span>
+              <span class="rating">
+                <i class="fa fa-calendar"></i> Feb 03 – Feb 05
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Offcanvas -->
+    <div class="offcanvas" id="offcanvas">
+      <div class="offcanvas-header">
+        <div class="logo">
+          <img src="./assets/images/Logo.png" alt="" />
+        </div>
+        <div class="cancel" id="cancel"><span>X</span></div>
+      </div>
+      <ul>
+        <li><a href="#">Destinations</a></li>
+        <li><a href="#">Hotels</a></li>
+        <li><a href="#">Flights</a></li>
+        <li><a href="#">Bookings</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#" class="sign-up">Sign up</a></li>
+      </ul>
+    </div>
+
+    <script src="./scripts/navbar-scroll.js"></script>
+    <script src="./scripts/offcanvas-script.js"></script>
+    <script src="./scripts/dropdown-script.js"></script>
+  </body>
+</html>

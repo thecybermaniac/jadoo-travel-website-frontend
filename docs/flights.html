@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="./icons/css/all.min.css" />
+  </head>
+
+  <body>
+    <!-- Navbar section -->
+    <nav id="navbar">
+      <div class="logo">
+        <img src="./assets/images/Logo.png" alt="" />
+      </div>
+      <ul>
+        <li><a href="#">Destinations</a></li>
+        <li><a href="#">Hotels</a></li>
+        <li><a href="#">Flights</a></li>
+        <li><a href="#">Bookings</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#" class="sign-up">Sign up</a></li>
+        <li style="display: flex; align-items: center" onclick="toggleDropdown()">
+          <span id="lang">EN</span>
+          <i class="fa fa-chevron-up" id="chevron-up"></i>
+          <i class="fa fa-chevron-down" id="chevron-down" style="display: none"></i>
+
+          <div class="dropdown" id="dropdown">
+            <ul>
+              <li onclick="switchLang('EN')"><span>English</span></li>
+              <li onclick="switchLang('ES')"><span>Spanish</span></li>
+              <li onclick="switchLang('FR')"><span>French</span></li>
+              <li onclick="switchLang('PT')"><span>Portuguese</span></li>
+              <li onclick="switchLang('IT')"><span>Italian</span></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+
+      <div class="menu" id="menu">
+        <i class="fas fa-bars" style="font-size: 20px; color: #181e4b"></i>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Flights Section -->
+    <section class="destinations-section">
+      <div class="destinations-heading">
+        <p>Best Deals</p>
+        <h1>Popular Flights</h1>
+      </div>
+
+      <div class="destinations-grid">
+        <!-- Flight 1 -->
+        <div class="destination-card">
+          <img
+            src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=900&q=80"
+            alt="Flight Rome to Paris"
+          />
+          <div class="destination-card-body">
+            <div class="destination-main">
+              <h3>Rome → Paris</h3>
+              <span class="price">$320</span>
+            </div>
+            <div class="destination-meta">
+              <span>
+                <i class="fa fa-clock"></i>
+                2h 10m
+              </span>
+              <span class="rating">
+                <i class="fa fa-plane"></i> Economy
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flight 2 -->
+        <div class="destination-card">
+          <img
+            src="https://images.unsplash.com/photo-1504198458649-3128b932f49b?auto=format&fit=crop&w=900&q=80"
+            alt="Flight London to Dubai"
+          />
+          <div class="destination-card-body">
+            <div class="destination-main">
+              <h3>London → Dubai</h3>
+              <span class="price">$680</span>
+            </div>
+            <div class="destination-meta">
+              <span>
+                <i class="fa fa-clock"></i>
+                6h 45m
+              </span>
+              <span class="rating">
+                <i class="fa fa-plane"></i> Business
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flight 3 -->
+        <div class="destination-card">
+          <img
+            src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=900&q=80"
+            alt="Flight Paris to New York"
+          />
+          <div class="destination-card-body">
+            <div class="destination-main">
+              <h3>Paris → New York</h3>
+              <span class="price">$890</span>
+            </div>
+            <div class="destination-meta">
+              <span>
+                <i class="fa fa-clock"></i>
+                8h 20m
+              </span>
+              <span class="rating">
+                <i class="fa fa-plane"></i> Economy
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flight 4 -->
+        <div class="destination-card">
+          <img
+            src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=900&q=80"
+            alt="Flight Tokyo to Sydney"
+          />
+          <div class="destination-card-body">
+            <div class="destination-main">
+              <h3>Tokyo → Sydney</h3>
+              <span class="price">$1,120</span>
+            </div>
+            <div class="destination-meta">
+              <span>
+                <i class="fa fa-clock"></i>
+                9h 50m
+              </span>
+              <span class="rating">
+                <i class="fa fa-plane"></i> Premium
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Offcanvas -->
+    <div class="offcanvas" id="offcanvas">
+      <div class="offcanvas-header">
+        <div class="logo">
+          <img src="./assets/images/Logo.png" alt="" />
+        </div>
+        <div class="cancel" id="cancel"><span>X</span></div>
+      </div>
+      <ul>
+        <li><a href="#">Destinations</a></li>
+        <li><a href="#">Hotels</a></li>
+        <li><a href="#">Flights</a></li>
+        <li><a href="#">Bookings</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#" class="sign-up">Sign up</a></li>
+      </ul>
+    </div>
+
+    <script src="./scripts/navbar-scroll.js"></script>
+    <script src="./scripts/offcanvas-script.js"></script>
+    <script src="./scripts/dropdown-script.js"></script>
+  </body>
+</html>
